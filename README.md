@@ -1,10 +1,10 @@
 # NovelNest - (BookLibrary)
 
-- A Book Library website built using FreeAPI.app that dynamically fetches and displays book data in a user-friendly interface. This project helps in practicing API requests, handling JSON data, and rendering dynamic content using JavaScript.
+- A Book Library website built using FreeAPI.app that dynamically fetches and displays book data in a user-friendly interface.
 
 ##  Live Demo  
 
-[Click here to view the live project](https://mg-quote-generator.netlify.app/)
+[Click here to view the live project](https://mg-book-library.netlify.app/)
 
 ## Features
 

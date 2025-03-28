@@ -82,6 +82,7 @@ function searchBooks(query) {
         book.volumeInfo.authors.some(author => author.toLowerCase().includes(query.toLowerCase()))
     );
     displayBooks(filteredBooks);
+    scrollToTop();
 }
 
 // Go To Previous Page Button
@@ -89,6 +90,7 @@ prevBtn.addEventListener("click", () => {
     if (currentPage > 1) {
         currentPage--;
         fetchBooks(currentPage);
+        scrollToTop();
     }
 });
 
@@ -96,7 +98,16 @@ prevBtn.addEventListener("click", () => {
 nextBtn.addEventListener("click", () => {
     currentPage++;
     fetchBooks(currentPage);
+    scrollToTop();
 });
+
+// Function to scroll to the top smoothly
+function scrollToTop() {
+    window.scrollTo({
+        top: 250,
+        behavior: "smooth"
+    });
+}
 
 // Event listeners for UI interactions
 document.getElementById('gridView').addEventListener('click', () => toggleView('grid'));

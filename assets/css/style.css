@@ -221,14 +221,14 @@ body {
     padding: 10px 20px;
     margin: 0 10px;
     cursor: pointer;
-    background-color: #608bd2;
+    background-color: #e98d78;
     color: white;
     border: none;
     border-radius: 5px;
 }
 
 .view-button:hover {
-    background-color: #4a6ebf;
+    background-color: #ff8f75;
 }
 
 .sort-btn {
@@ -544,7 +544,7 @@ body {
     /* gap: 10px; */
 }
 
-.view-button {
+/* .view-button {
     padding: 6px 12px;
     border: none;
     border-radius: 5px;
@@ -557,4 +557,4 @@ body {
 
 .view-button:hover {
     background-color: #0056b3;
-}
+} */
