@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovelNest - Book Library</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon-32x32.png">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header-fixed">
+        <div class="header-limiter">
+            <h1>
+                <a href="javascript:void(0);">Novel<span>Nest</span></a>
+            </h1>
+            <nav>
+                <a href="javascript:void(0);" class="selected">Home</a>
+                <a href="javascript:void(0);">Pages</a>
+                <a href="javascript:void(0);">Blog</a>
+                <a href="javascript:void(0);">Shop</a>
+                <a href="javascript:void(0);">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="left-content">
+                <h2 class="main-title">Buy and sell your books for the best price</h2>
+                <p class="sub-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, quas.</p>
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Search for ISBN number">
+                    <button type="submit" id="searchBook">Search</button>
+                </div>
+            </div>
+            <div class="right-content">
+                <img src="./assets/images/img2.png" alt="Book Showcase">
+            </div>
+        </div>
+    </section>
+
+    <!-- Sorting and View Toggle Section -->
+    <div class="sort-btn">
+        <label for="sortBooks">Sort by:</label>
+        <div class="sort-options">
+            <select id="sortBooks">
+                <option value="alphabetical">Alphabetical</option>
+                <option value="publishedDate">Published Date</option>
+            </select>
+        </div>
+        <div class="view-toggle">
+            <button id="gridView" class="view-button">Grid View</button>
+            <button id="listView" class="view-button">List View</button>
+        </div>
+    </div>
+
+    <!-- Best Seller Section -->
+    <section class="best-seller">
+        <h2>Best Seller Books</h2>
+        <div class="book-list" id="bookList">
+            <!-- Dynamic book cards will be displayed here -->
+        </div>
+    </section>
+
+    <!-- Pagination Controls -->
+    <div class="pagination">
+        <button id="prevPage" class="btn" disabled>« Prev</button>
+        <span id="pageNumber">Page 1</span>
+        <button id="nextPage" class="btn">Next »</button>
+    </div>
+
+    <!-- Loader (Visible when data is loading) -->
+    <div id="loader" class="loader-overlay">
+        <span class="loader"></span>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section about">
+                <h2>About Us</h2>
+                <p>Explore a vast collection of books in our library. From classics to modern literature, we have something for everyone.</p>
+            </div>
+            <div class="footer-section links">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="javascript:void(0);">Home</a></li>
+                    <li><a href="javascript:void(0);">Categories</a></li>
+                    <li><a href="javascript:void(0);">New Arrivals</a></li>
+                    <li><a href="javascript:void(0);">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h2>Contact Us</h2>
+                <p>Email: <a href="mailto:your.email@example.com">support@booklibrary.com</a></p>
+                <p>Phone: <a href="tel:+1234567890">+91 96010 96010</a></p>
+                <p>Address: Bengaluru, India.</p>
+            </div>
+            <div class="footer-section social">
+                <h2>Follow Us</h2>
+                <div class="social-icons">
+                    <a href="javascript:void(0);"><i class="fab fa-facebook"></i></a>
+                    <a href="javascript:void(0);"><i class="fab fa-twitter"></i></a>
+                    <a href="javascript:void(0);"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Book Library | All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>

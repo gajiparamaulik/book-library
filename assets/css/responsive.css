@@ -1,0 +1,81 @@
+@media (max-width: 1200px) {
+    .book-list.grid {
+        grid-template-columns: repeat(3, 1fr); /* 3 items per row on smaller screens */
+    }
+}
+
+@media (max-width: 900px) {
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .left-content {
+        padding-right: 0;
+    }
+
+    .right-content img {
+        max-width: 100%;
+    }
+
+    .book-list.grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 items per row on even smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .header-fixed {
+		padding: 20px 0;
+		height: 75px;
+	}
+
+	.header-fixed .header-limiter h1 {
+		float: none;
+		margin: -8px 0 10px;
+		text-align: center;
+		font-size: 24px;
+		line-height: 1;
+	}
+
+	.header-fixed .header-limiter nav {
+		line-height: 1;
+		float:none;
+	}
+
+	.header-fixed .header-limiter nav a {
+		font-size: 13px;
+	}
+
+	body.fixed .header-fixed {
+		display: none;
+	}
+    
+    .book-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .book-card img {
+        margin-bottom: 15px; /* Add space below image in mobile view */
+    }
+
+    .book-card .book-details {
+        align-items: center;
+    }
+
+    .book-list.grid {
+        grid-template-columns: 1fr; /* 1 item per row on mobile */
+    }
+}
